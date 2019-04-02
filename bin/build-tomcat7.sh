@@ -10,5 +10,6 @@ rm -rf tomcat &&
 git clone -b 7.0.x --depth 1 https://github.com/nebosuke/tomcat.git &&
 cd tomcat &&
 ant deploy &&
-cd /work/tomcat/output/build &&
-tar zcvf /dist/apache-tomcat-7.0.93-fix.tar.gz .
+cd /work/tomcat/output &&
+mv build apache-tomcat-7.0.93 &&
+tar zcvf /dist/apache-tomcat-7.0.93-fix.tar.gz apache-tomcat-7.0.93
