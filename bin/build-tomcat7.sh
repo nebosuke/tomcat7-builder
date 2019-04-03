@@ -9,6 +9,7 @@ cd /work &&
 rm -rf tomcat &&
 git clone -b 7.0.x --depth 1 https://github.com/nebosuke/tomcat.git &&
 cd tomcat &&
+git log &&
 ant deploy &&
 cd /work/tomcat/output &&
 mv build apache-tomcat-7.0.93 &&
