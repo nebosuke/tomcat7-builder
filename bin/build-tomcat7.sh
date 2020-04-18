@@ -5,10 +5,10 @@ export ANT_HOME=/work/apache-ant
 export PATH=$PATH:${ANT_HOME}/bin
 
 if [ "x$BRANCH" = "x" ]; then
-    export BRANCH=7.0.94-p1
+    export BRANCH=7.0.103-p1
 fi
 if [ "x$VERSION" = "x" ]; then
-    export VERSION=7.0.94
+    export VERSION=7.0.103
 fi
 
 ORIGINAL_BINARY="http://ftp.jaist.ac.jp/pub/apache/tomcat/tomcat-7/v${VERSION}/bin/apache-tomcat-${VERSION}.tar.gz"

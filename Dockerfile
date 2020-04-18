@@ -9,9 +9,9 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir -p /dist && \
     mkdir -p /work && \
     cd /work && \
-    wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.8.2-bin.tar.gz && \
-    tar zxf apache-ant-1.8.2-bin.tar.gz && \
-    ln -s apache-ant-1.8.2 apache-ant && \
+    wget https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.14-bin.tar.gz && \
+    tar zxf apache-ant-1.9.14-bin.tar.gz && \
+    ln -s apache-ant-1.9.14 apache-ant && \
     mkdir -p /dist
 
 ADD bin/build-tomcat7.sh /usr/local/bin/
